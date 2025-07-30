@@ -30,46 +30,9 @@
             android:theme="@style/Theme.AuthSdk.Transparent" />
 
         <activity
-            android:name="com.yandex.authsdk.internal.ChromeTabLoginActivity"
-            android:launchMode="singleTop"
-            android:theme="@style/Theme.AuthSdk.Transparent" />
-
-        <activity
             android:name="com.yandex.authsdk.internal.WebViewLoginActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.AuthSdk" />
-
-        <activity
-            android:name="com.yandex.authsdk.internal.ChromeTabDataActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AuthSdk.Transparent">
-
-            <intent-filter
-                android:autoVerify="true"
-                tools:ignore="AppLinkUrlError,ExtraText">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="yx${YANDEX_CLIENT_ID}.${YANDEX_OAUTH_HOST}"
-                    android:path="/auth/finish"
-                    android:scheme="https" />
-            </intent-filter>
-
-            <intent-filter tools:ignore="AppLinkUrlError">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:path="/auth/finish"
-                    android:scheme="yx${YANDEX_CLIENT_ID}"
-                    tools:ignore="GoogleAppIndexingUrlError" />
-            </intent-filter>
-        </activity>
 
         <meta-data
             android:name="com.yandex.auth.CLIENT_ID"
