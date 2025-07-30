@@ -76,5 +76,5 @@ dependencies {
     implementation libs.androidx.lifecycle.viewmodel.ktx
 
 //    implementation project(path: ':lib')
-    implementation 'com.github.aakumykov:yandex-login-sdk-android-ng:2bf0c95843'
+    implementation 'com.github.aakumykov:yandex-login-sdk-android-ng:0b2972f4d3'
 }
