@@ -7,8 +7,8 @@ plugins {
 }
 
 project.ext {
-    artifactId = 'yandex_disk_file_lister_navigator_selector'
-    groupId = 'com.github.aakumykov'
+    artifactId = 'yandex-login-sdk-ng'
+    groupId = 'com.github.akumykov'
 
     majorVersionNum = 3
     minorVersionNum = 1
@@ -20,7 +20,7 @@ project.ext {
 }
 
 android {
-    namespace groupId + '.' + artifactId
+    namespace "com.yandex.authsdk"
     compileSdk 35
 
     defaultConfig {
@@ -76,14 +76,6 @@ android {
 }
 
 dependencies {
-
-    /*implementation libs.androidx.core.ktx
-    implementation libs.androidx.appcompat
-    implementation libs.material
-    testImplementation libs.junit
-    androidTestImplementation libs.androidx.junit
-    androidTestImplementation libs.androidx.espresso.core*/
-
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation libs.material

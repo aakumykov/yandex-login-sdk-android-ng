@@ -2,8 +2,7 @@ package com.yandex.authsdk.internal.strategy
 
 import android.content.Context
 import android.content.Intent
-import com.yandex.android.authsdk.BuildConfig
-//import com.yandex.authsdk.BuildConfig
+import com.yandex.authsdk.BuildConfig
 import com.yandex.authsdk.YandexAuthException
 import com.yandex.authsdk.YandexAuthToken
 import com.yandex.authsdk.internal.PackageManagerHelper
