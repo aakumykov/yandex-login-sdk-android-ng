@@ -9,7 +9,7 @@ internal class LoginStrategyResolver(
 ) {
 
     private val fullLoginTypesOrder: List<LoginType> = listOf(
-        LoginType.NATIVE, LoginType.CHROME_TAB, LoginType.WEBVIEW,
+        LoginType.NATIVE, LoginType.WEBVIEW,
     )
 
     fun getLoginStrategy(preferredLoginType: LoginType): LoginStrategy {
@@ -18,7 +18,6 @@ internal class LoginStrategyResolver(
         return loginTypeOrder.firstNotNullOf {
             return@firstNotNullOf when (it) {
                 LoginType.NATIVE -> NativeLoginStrategy.getIfPossible(packageManagerHelper)
-                LoginType.CHROME_TAB -> ChromeTabLoginStrategy.getIfPossible(context.packageManager)
                 LoginType.WEBVIEW -> WebViewLoginStrategy.get()
             }
         }

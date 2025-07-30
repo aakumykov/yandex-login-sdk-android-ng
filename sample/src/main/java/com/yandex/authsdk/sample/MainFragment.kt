@@ -51,10 +51,6 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                     loginType = LoginType.NATIVE
                 }
 
-                R.id.chrome_tab_btn -> {
-                    loginType = LoginType.CHROME_TAB
-                }
-
                 R.id.webview_btn -> {
                     loginType = LoginType.WEBVIEW
                 }
