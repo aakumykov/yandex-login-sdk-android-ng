@@ -20,6 +20,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "yandex-login-sdk-android-flamingo-3"
+rootProject.name = "yandex-login-sdk-android-ng"
 include ':sample'
 include ':lib'
